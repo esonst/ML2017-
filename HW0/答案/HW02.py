@@ -3,33 +3,33 @@
 
 # # 图片处理
 
-# In[10]:
+# In[1]:
 
 
 import numpy
 
 
-# In[11]:
+# In[2]:
 
 
 from PIL import Image
-img=Image.open('westbrook.jpg')
+img=Image.open(r'..\题目\westbrook.jpg')
 
 
-# In[46]:
+# In[3]:
 
 
 matrix = numpy.asarray(img)
 ss=(matrix/2).astype(int)
 
 
-# In[51]:
+# In[4]:
 
 
 image = Image.fromarray(ss.astype(numpy.uint8))
 
 
-# In[52]:
+# In[5]:
 
 
 image.show()

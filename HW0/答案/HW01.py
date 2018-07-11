@@ -5,14 +5,14 @@
 
 # ## 打开文件
 
-# In[39]:
+# In[4]:
 
 
-with open('words.txt') as f:
+with open(r'..\题目\words.txt') as f:
     ans=""+f.read()[:-1]#去掉“\n”符号
 
 
-# In[40]:
+# In[5]:
 
 
 """
@@ -32,7 +32,7 @@ def checkin (a,index,freq):
 # 
 # freq: 对应词频率
 
-# In[41]:
+# In[6]:
 
 
 index=[]
@@ -42,7 +42,7 @@ for i in ans.split(" "):
         index.append(i)
 
 
-# In[49]:
+# In[7]:
 
 
 #输出
